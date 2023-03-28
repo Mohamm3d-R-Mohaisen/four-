@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Watch</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ********link font awsom****** -->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="img/logo.png" alt="" />
+        </div>
+
+        <div class="menu">
+          <ul>
+            <li class="active">Home</li>
+            <li>About</li>
+            <li>SmartPhone</li>
+            <li>Store</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+
+        <div class="buttun">
+          <button>Bay Now</button>
+
+          <i class="fa-solid fa-bars btn"></i>
+        </div>
+      </nav>
+    </header>
+    <!-- **************end headre********* -->
+
+    <!-- ************start first section********* -->
+    <section class="first_sec">
+      <div class="box1">
+        <h1>Smartwatch</h1>
+        <h2>ELEMENT SERIA</h2>
+        <p>
+          How To Make Website With Smooth Animation Effects Using | Responsive
+          Website Design
+        </p>
+        <div class="box1_contener">
+          <div class="card">
+            <h3>White</h3>
+            <p>Element</p>
+            <img src="img/main1.png" alt="" />
+          </div>
+          <div class="card">
+            <h3>White</h3>
+            <p>Element</p>
+            <img src="img/main1.png" alt="" />
+          </div>
+          <div class="card">
+            <h3>White</h3>
+            <p>Element</p>
+            <img src="img/main1.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="box2">
+        <img src="img/hero.png" alt="" width="100%" />
+      </div>
+    </section>
+    <script>
+      btn = document.querySelector(".btn");
+      nav = document.querySelector(".menu");
+      btn.onclick = function () {
+        nav.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>

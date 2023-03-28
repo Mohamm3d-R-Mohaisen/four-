@@ -1,0 +1,200 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    --back_color:#E6E5E6;
+    --color:#F99B90;
+    --pcolor:#8C8B8C
+    
+}
+body{
+    background-color: var(--back_color);
+   
+}
+/* ************start header********** */
+header{
+    background-color: white;
+
+  
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 10px 40px ;
+   
+  justify-content: space-between;
+ 
+ 
+}
+.logo{
+    margin-left: 20px;
+}
+.logo img {
+width:70%;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 65px;
+  
+    font-weight: bold;
+    font-size: 17px;
+    
+}
+.header_icon i {
+    padding: 0 20px;
+}
+.buttun button{
+    height: 40px;
+    width: 120px;
+    background-color: var(--color);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.buttun i {
+    font-size: 20px;
+    display: none;
+    margin-left: 35px;
+
+}
+.buttun  {
+display: flex;
+align-items: center;
+justify-content: flex-end;
+}
+
+.active{
+    color: var(--color);
+}
+.menu ul li:hover{
+    color: var(--color);
+}
+
+/* ****************end header ********* */
+
+/* **********Start first section******* */
+.first_sec{
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    
+    
+    padding: 20px 50px;
+    padding-right: 0;
+}
+
+.box1 h1 {
+    font-size: 100px;
+    margin-bottom: 20px;
+    /* font-family: 'Gajraj One', cursive; */
+  
+}
+.box1 h2 {
+    font-size: 30px;
+    margin-bottom: 20px; 
+     color: var(--color);
+     letter-spacing: 10px;
+} 
+@media screen and (max-width:800px ) {
+    .box1 h1{
+        font-size: 80px;
+    }
+
+}
+@media screen and (max-width:500px ) {
+    .box1 h1 {
+        font-size: 60px;
+    }
+    .box1 h2 {
+        font-size: 20px;
+    }
+    .box1 p {
+        font-size: 12px;
+    }
+
+}
+.box1>p {
+    font-size: 15px;
+    color:var(--pcolor);
+   
+}
+.card{
+    margin-top: 50px;
+    width: 160px;
+    background-color: white;
+    padding: 30px 1px;
+    text-align: center;
+    border-radius: 18px;
+}
+.card h3{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.card p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--color);
+}
+.card img{
+    width: 85%;
+}
+.box1_contener{
+    display: flex;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+}
+.box2{
+    width: 80%;
+}
+.box2 img {
+    width: 100%;
+}
+
+/* ***************************** */
+@media screen and (max-width:1100px ) {
+   nav {
+        position: relative;
+    
+       
+    }
+    .buttun i {
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        top: -250px;
+        background-color:black;
+        left: 0px;
+        /* padding-left: 50px; */
+        padding-top: 30px;
+        padding-bottom: 30px;
+        transition: 0.5s;
+        width: 100%;
+
+    }
+    
+    .menu ul{
+         flex-direction: column;
+         gap: 20px;
+         color: white;
+         padding-left: 60px;
+       
+    }
+    .active{
+        top: 64px;  
+     
+       
+    }
+    .box1_contener{
+    
+        flex-wrap: wrap;
+    }
+    .first_sec{
+    
+        flex-wrap: wrap;
+        
+    }
+}
